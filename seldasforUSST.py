@@ -19,13 +19,13 @@ class scrapyclass():
             info.append('登录中...')
             time.sleep(1)
             if self.isexist('username'):
-                self.driver.find_element_by_id('username').send_keys('192560922')
-                self.driver.find_element_by_id('password').send_keys('IVANLIN~|!y#!')
+                self.driver.find_element_by_id('username').send_keys('****')
+                self.driver.find_element_by_id('password').send_keys('****')
                 self.driver.find_element_by_id('password').send_keys(Keys.ENTER)
 
             elif self.isexist('IDToken1'):
-                self.driver.find_element_by_id('IDToken1').send_keys('192560922')
-                self.driver.find_element_by_id('IDToken2').send_keys('IVANLIN~|!y#!')
+                self.driver.find_element_by_id('IDToken1').send_keys('******')
+                self.driver.find_element_by_id('IDToken2').send_keys('*****')
                 self.driver.find_element_by_id('IDToken2').send_keys(Keys.ENTER)
 
             info.append('权限验证通过！')
