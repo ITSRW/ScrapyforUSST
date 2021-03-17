@@ -24,13 +24,13 @@ class scrapyclass():
             WebDriverWait(self.driver, 60).until(lambda x: x.find_element_by_id("password"))
 
             if self.driver.find_element_by_id('username').is_displayed():
-                self.driver.find_element_by_id('username').send_keys('192560922')
-                self.driver.find_element_by_id('password').send_keys('IVANLIN~|!y#!')
+                self.driver.find_element_by_id('username').send_keys('*******')
+                self.driver.find_element_by_id('password').send_keys('******')
                 self.driver.find_element_by_id('password').send_keys(Keys.ENTER)
 
             if self.driver.find_element_by_id('IDToken1').is_displayed():
-                self.driver.find_element_by_id('IDToken1').send_keys('192560922')
-                self.driver.find_element_by_id('IDToken2').send_keys('IVANLIN~|!y#!')
+                self.driver.find_element_by_id('IDToken1').send_keys('*****')
+                self.driver.find_element_by_id('IDToken2').send_keys('*******')
                 self.driver.find_element_by_name('Login.Submit').click()
             if self.driver.find_element_by_id('KCDM').is_displayed():
                 info.append('登陆成功！')
